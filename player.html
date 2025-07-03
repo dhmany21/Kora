@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>صفحة لاعب - Kora Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background: url('https://i.imgur.com/G2fKX3U.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    header img {
+      vertical-align: middle;
+      width: 30px;
+      margin-left: 10px;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffd700;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .dark-mode {
+      background-color: #121212 !important;
+      color: #eee !important;
+    }
+    .toggle-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      background-color: #ffd700;
+      color: black;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-btn" onclick="toggleDarkMode()">الوضع الليلي</button>
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/1064/1064034.png" alt="logo" />
+    Kora Live
+  </header>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="comparison.html">مقارنة اللاعبين</a>
+    <a href="news.html">الأخبار</a>
+    <a href="search.html">بحث</a>
+    <a href="player.html">لاعب</a>
+    <a href="admin.html">لوحة التحكم</a>
+  </nav>
+  <section>
+    <h2>👤 صفحة اللاعب</h2>
+    <p>هنا يظهر ملف لاعب معين مع تفاصيله الكاملة.</p>
+  </section>
+  <footer>
+    &copy; 2025 Kora Live
+  </footer>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
